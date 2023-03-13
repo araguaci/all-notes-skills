@@ -954,3 +954,5 @@ Permission is hereby granted, free of charge, to
 
 
 [source from Alicia Sykes](https://dev.to/lissy93/cli-tools-you-cant-live-without-57f6#)
+
+[⬆ back to top](#table-of-contents)
