@@ -484,7 +484,6 @@ sudo apt install just
 
 * * *
 
-* * *
 
 ## <a id="cli-monitoring-and-performance-apps"></a>[](#cli-monitoring-and-performance-apps)CLI Monitoring and Performance Apps
 
@@ -568,7 +567,7 @@ sudo apt install just
 
 * * *
 
-* * *
+
 
 ## <a id="cli-productivity-apps"></a>[](#cli-productivity-apps)CLI Productivity Apps
 
@@ -692,7 +691,7 @@ sudo apt install just
 
 * * *
 
-* * *
+
 
 ## <a id="cli-dev-suits"></a>[](#cli-dev-suits)CLI Dev Suits
 
@@ -741,8 +740,6 @@ sudo apt install just
 [![gdp-dashboard-example-usage](https://res.cloudinary.com/practicaldev/image/fetch/s--kbRmT8iS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.ibb.co/2g2hVLh/gdp-dashboard.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--kbRmT8iS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.ibb.co/2g2hVLh/gdp-dashboard.png)
 
 [![View gdb-dashboard on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--t2fhQI36--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/cyrus-and/gdb-dashboard%3Fcolor%3D232323%26label%3Dgdb-dashboard%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/cyrus-and/gdb-dashboard) [![Author cyrus-and](https://res.cloudinary.com/practicaldev/image/fetch/s--0wBnPb3Q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/cyrus-and-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/cyrus-and)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
-
-* * *
 
 * * *
 
@@ -811,7 +808,7 @@ sudo apt install just
 
 * * *
 
-* * *
+
 
 ## <a id="cli-fun"></a>[](#cli-fun)CLI Fun
 
@@ -859,7 +856,7 @@ As an example, I'm using `cowsay`, `figlet`, `lolcat` and `neofetch` to create a
 
 * * *
 
-* * *
+
 
 ## <a id="installations-and-management"></a>[](#installations-and-management)Installations and Management
 
