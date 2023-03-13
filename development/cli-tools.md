@@ -1,7 +1,5 @@
 # CLI tools you won't be able to live without 🔧
 
-[#bash](https://dev.to/t/bash) [#rust](https://dev.to/t/rust) [#tooling](https://dev.to/t/tooling) [#productivity](https://dev.to/t/productivity)
-
 As developers, we spend a lot of our time in the terminal. There's a lot of helpful CLI tools, which can make your life in the command line easier, faster and generally more fun.
 
 This post outlines my top 50 must-have CLI tools, which I've come to rely on. If there's anything I'm missing - do let me know in the comments :)
@@ -88,7 +86,7 @@ At the end of the article, I've included some scripts to help you automate the i
 
 > `thefuck` is one of those utilities you won't be able to live without once you've tried it. Whenever you mis-type a command and get an error, just run `fuck` and it'll auto-correct it. Use up/down to choose a correction, or just run `fuck --yeah` to just execute the most likely immediately.
 
-<img width="678" height="362" src=":/264af10560544722be63d808fa2e62d3"/>
+<img width="678" height="362" src="https://res.cloudinary.com/practicaldev/image/fetch/s--u7SIvxke--/c_limit,f_auto,fl_progressive,q_66,w_880/https://i.ibb.co/J55hWKX/thefuck.gif"/>
 
 [![View thefuck on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--KxN6ggWN--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/nvbn/thefuck%3Fcolor%3D232323%26label%3Dthefuck%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/nvbn/thefuck) [![Author nvbn](https://res.cloudinary.com/practicaldev/image/fetch/s--S5h3q0Nw--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/nvbn-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/nvbn)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
@@ -111,7 +109,7 @@ pkg install thefuck
 
 > `z` lets you jump to any directory without needing to remember or specify its full path. It remembers which directories you've visited, so you can jump around quickly - you don't even need to type the full folder name. It also has an interactive selection option, using `fzf` so you can live-filter directory results
 
-<img width="678" height="362" src=":/b43f68a2748749b48fea9c7fab1c143c"/>
+<img width="678" height="362" src="https://res.cloudinary.com/practicaldev/image/fetch/s--XDmbmZKz--/c_limit,f_auto,fl_progressive,q_66,w_880/https://i.ibb.co/6Z960jq/zoxide.gif"/>
 
 [![View zoxide on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--M0QrGEHB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/ajeetdsouza/zoxide%3Fcolor%3D232323%26label%3Dzoxide%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/ajeetdsouza/zoxide) [![Author ajeetdsouza](https://res.cloudinary.com/practicaldev/image/fetch/s--MFq3IwSb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/ajeetdsouza-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/ajeetdsouza)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
@@ -140,7 +138,7 @@ cargo install zoxide --locked
 
 > `tldr` is a huge collection of community-maintained man pages. Unlike traditional man pages, they're summarized, contain useful usage examples and nicely colourized for easy reading
 
-<img width="678" height="362" src=":/6509ba08a8bd4584a42682f7c0267be3"/>
+<img width="678" height="362" src="https://res.cloudinary.com/practicaldev/image/fetch/s--NCt0wa_e--/c_limit,f_auto,fl_progressive,q_66,w_880/https://i.ibb.co/jTW9knx/tlfr.gif"/>
 
 [![View tldr on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s---ow3kUG2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/tldr-pages/tldr%3Fcolor%3D232323%26label%3Dtldr%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/tldr-pages/tldr) [![Author tldr-pages](https://res.cloudinary.com/practicaldev/image/fetch/s--lqs7vHQ6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/tldr-pages-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/tldr-pages)
 
