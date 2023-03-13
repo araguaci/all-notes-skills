@@ -5,7 +5,9 @@ As developers, we spend a lot of our time in the terminal. There's a lot of help
 This post outlines my top 50 must-have CLI tools, which I've come to rely on. If there's anything I'm missing - do let me know in the comments :)
 
 At the end of the article, I've included some scripts to help you automate the installation and updating of these tools on various systems/ distros.
+
 <details>
+<summary><b>Sumary (click for expand)</b></summary>
 ## Table of Contents
 
 - [Utils](#utils)
