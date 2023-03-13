@@ -81,6 +81,7 @@ At the end of the article, I've included some scripts to help you automate the i
     - [What wasn't included](#what-wasnt-included)
     - [Credit](#credit)
     - [Feedback](#feedback)
+    - [Source](https://dev.to/lissy93/cli-tools-you-cant-live-without-57f6)
     - [Find More](#find-more)
 
 </details>
@@ -952,6 +953,16 @@ Permission is hereby granted, free of charge, to
 
 [![View repo-badge-maker on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--VPee_IQV--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/Lissy93/repo-badge-maker%3Fcolor%3D232323%26label%3Drepo-badge-maker%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/Lissy93/repo-badge-maker) [![Author Lissy93](https://res.cloudinary.com/practicaldev/image/fetch/s--br1jY6vC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/Lissy93-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/Lissy93)
 
+
+#### <a id="find-more"></a>[](#find-more)Find More
+
+If you were enjoying this, I recommend also checking out:
+
+- **[terminals-are-sexy](https://github.com/k4m4/terminals-are-sexy)** by Nikolaos Kamarinakis
+- **[awesome-shell](https://github.com/alebcay/awesome-shell)** by Caleb Xu
+- **[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)** by Adam Garrett-Harris
+
+If you're new to the command line, then **[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)** by Joshua Levy is an excellent resource, as is the **[Bash Guide](https://github.com/Idnan/bash-guide)** by Adnan Ahmed.
 
 [source from Alicia Sykes](https://dev.to/lissy93/cli-tools-you-cant-live-without-57f6#)
 
