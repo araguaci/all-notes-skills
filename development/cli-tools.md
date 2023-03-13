@@ -5,43 +5,43 @@ As developers, we spend a lot of our time in the terminal. There's a lot of help
 This post outlines my top 50 must-have CLI tools, which I've come to rely on. If there's anything I'm missing - do let me know in the comments :)
 
 At the end of the article, I've included some scripts to help you automate the installation and updating of these tools on various systems/ distros.
-
-↕️ **Contents** (click to expand)
+<details>
+## Table of Contents
 
 - [Utils](#utils)
     - [`thefuck` \- Auto-correct miss-typed commands](#thefuck---auto-correct-miss-typed-commands)
-    - [`zoxide` \- Easy navigation *(better cd)*](#zoxide---zoxide-easy-navigation-_better-cd_)
-    - [`tldr` \- Community-maintained docs *(better `man`)*](#tldr---community-maintained-docs-_better-man_)
-    - [`scc` \- Count lines of code *(better `cloc`)*](#scc---count-lines-of-code-_better-cloc_)
-    - [`exa` \- Listing Files *(better `ls`)*](#exa---listing-files-_better-ls_)
-    - [`duf` \- Disk Usage *(better `df`)*](#duf---disk-usage-_better-df_)
-    - [`aria2` \- Download Utility *(better `wget`)*](#aria2---download-utility-_better-wget_)
-    - [`bat` \- Reading Files *(better `cat`)*](#bat---reading-files-_better-cat_)
-    - [`diff-so-fancy` \- File Comparisons *(better `diff`)*](#diff-so-fancy---fancydiff-so-fancy-file-comparisons-_better-diff_)
+    - [`zoxide` \- Easy navigation *(better cd)*](#zoxide---zoxide-easy-navigation-_better-cd)
+    - [`tldr` \- Community-maintained docs *(better `man`)*](#tldr---community-maintained-docs-_better-man)
+    - [`scc` \- Count lines of code *(better `cloc`)*](#scc---count-lines-of-code-_better-cloc)
+    - [`exa` \- Listing Files *(better `ls`)*](#exa---listing-files-_better-ls)
+    - [`duf` \- Disk Usage *(better `df`)*](#duf---disk-usage-_better-df)
+    - [`aria2` \- Download Utility *(better `wget`)*](#aria2---download-utility-_better-wget)
+    - [`bat` \- Reading Files *(better `cat`)*](#bat---reading-files-better-cat)
+    - [`diff-so-fancy` \- File Comparisons *(better `diff`)*](#diff-so-fancy---fancydiff-so-fancy-file-comparisons-_better-diff)
     - [`entr` \- Watch for changes](#entr---watch-for-changes)
     - [`exiftool` \- Reading + writing metadata](#exiftool---reading-writing-metadata)
     - [`fdupes` \- Duplicate file finder](#fdupes---duplicate-file-finder)
-    - [`fzf` \- Fuzzy file finder *(better `find`)*](#fzf---fuzzy-file-finder-_better-find_)
+    - [`fzf` \- Fuzzy file finder *(better `find`)*](#fzf---fuzzy-file-finder-better-find)
     - [`hyperfine` \- Command benchmarking](#hyperfine---command-benchmarking)
-    - [`just` \- Modern command runner *(better `make`)*](#just---modern-command-runner-_better-make_)
+    - [`just` \- Modern command runner *(better `make`)*](#just---modern-command-runner-_better-make)
     - [`jq` \- JSON processor](#jq---json-processor)
-    - [`most` \- Multi-window scroll pager *(better less)*](#most---multi-window-scroll-pager-_better-less_)
-    - [`procs` \- Process viewer *(better ps)*](#procs---process-viewer-_better-ps_)
-    - [`rip` \- Deletion tool *(better rm)*](#rip---deletion-tool-_better-rm_)
-    - [`ripgrep` \- Search within files *(better `grep`)*](#ripgrep---search-within-files-_better-grep_)
+    - [`most` \- Multi-window scroll pager *(better less)*](#most---multi-window-scroll-pager-_better-less)
+    - [`procs` \- Process viewer *(better ps)*](#procs---process-viewer-_better-ps)
+    - [`rip` \- Deletion tool *(better rm)*](#rip---deletion-tool-_better-rm)
+    - [`ripgrep` \- Search within files *(better `grep`)*](#ripgrep---search-within-files-_better-grep)
     - [`rsync` \- Fast, incremental file transfer](#rsynchttpsrsyncsambaorg-fast-incremental-file-transfer)
-    - [`sd` \- Find and replace *(better `sed`)*](#sd---find-and-replace-_better-sed_)
-    - [`tre` \- Directory hierarchy *(better `tree`)*](#tre---directory-hierarchy-_better-tree_)
+    - [`sd` \- Find and replace *(better `sed`)*](#sd---find-and-replace-_better-sed)
+    - [`tre` \- Directory hierarchy *(better `tree`)*](#tre---directory-hierarchy-_better-tree)
     - [`xsel` \- Access the clipboard](#xsel---access-the-clipboard)
 - [CLI Monitoring and Performance Apps](#cli-monitoring-and-performance-apps)
     - [`bandwhich` \- Bandwidth utilization monitor](#bandwhich---bandwidth-utilization-monitor)
     - [`ctop` \- Container metrics and monitoring](#ctop---container-metrics-and-monitoring)
-    - [`bpytop` \- Resource monitoring *(better `htop`)*](#bpytop---resource-monitoring-_better-htop_)
+    - [`bpytop` \- Resource monitoring *(better `htop`)*](#bpytop---resource-monitoring-_better-htop)
     - [`glances` \- Resource monitor + web and API](#glances---resource-monitor-web-and-api)
-    - [`gping` \- Interactive ping tool *(better `ping`)*](#gping---interactive-ping-tool-_better-ping_)
-    - [`dua-cli` \- Disk usage analyzer and monitor *(better `du`)*](#dua-cli---cli-disk-usage-analyzer-and-monitor-_better-du_)
+    - [`gping` \- Interactive ping tool *(better `ping`)*](#gping---interactive-ping-tool-_better-ping)
+    - [`dua-cli` \- Disk usage analyzer and monitor *(better `du`)*](#dua-cli---cli-disk-usage-analyzer-and-monitor-_better-du)
     - [`speedtest-cli` \- Command line speed test utility](#speedtest-cli---cli-command-line-speed-test-utility)
-    - [`dog` \- DNS lookup client *(better `dig`)*](#dog---dns-lookup-client-_better-dig_)
+    - [`dog` \- DNS lookup client *(better `dig`)*](#dog---dns-lookup-client-_better-dig)
 - [CLI Productivity Apps](#cli-productivity-apps)
     - [`browsh` \- CLI web browser](#browsh---orgbrowsh-cli-web-browser)
     - [`buku` \- Bookmark manager](#buku---bookmark-manager)
@@ -80,6 +80,8 @@ At the end of the article, I've included some scripts to help you automate the i
     - [Feedback](#feedback)
     - [Find More](#find-more)
 
+</details>
+
 ## <a id="utils"></a>[](#utils)Utils
 
 ### <a id="-raw-thefuck-endraw-autocorrect-misstyped-commands"></a>[](#-raw-thefuck-endraw-autocorrect-misstyped-commands)[`thefuck`](https://github.com/nvbn/thefuck) \- Auto-correct miss-typed commands
@@ -103,7 +105,7 @@ sudo pacman -S thefuck
 pkg install thefuck 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-zoxide-endraw-easy-navigation-better-cd"></a>[](#-raw-zoxide-endraw-easy-navigation-better-cd)[`zoxide`](https://github.com/ajeetdsouza/zoxide) \- Easy navigation *(better cd)*
 
@@ -132,7 +134,7 @@ pkg install zoxide
 cargo install zoxide --locked 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-tldr-endraw-communitymaintained-docs-better-raw-man-endraw-"></a>[](#-raw-tldr-endraw-communitymaintained-docs-better-raw-man-endraw-)[`tldr`](https://github.com/tldr-pages/tldr) \- Community-maintained docs *(better `man`)*
 
@@ -152,7 +154,7 @@ brew install tldr
 npm install -g tldr 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-scc-endraw-count-lines-of-code-better-raw-cloc-endraw-"></a>[](#-raw-scc-endraw-count-lines-of-code-better-raw-cloc-endraw-)[`scc`](https://github.com/boyter/scc) \- Count lines of code *(better `cloc`)*
 
@@ -172,7 +174,7 @@ brew install scc
 go install github.com/boyter/scc/v3@latest 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-exa-endraw-listing-files-better-raw-ls-endraw-"></a>[](#-raw-exa-endraw-listing-files-better-raw-ls-endraw-)[`exa`](https://github.com/ogham/exa) \- Listing Files *(better `ls`)*
 
@@ -195,7 +197,7 @@ sudo pacman -S exa
 sudo apt install exa 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-duf-endraw-disk-usage-better-raw-df-endraw-"></a>[](#-raw-duf-endraw-disk-usage-better-raw-df-endraw-)[`duf`](https://github.com/muesli/duf) \- Disk Usage *(better `df`)*
 
@@ -221,7 +223,7 @@ sudo apt install duf
 pkg install duf 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-aria2-endraw-download-utility-better-raw-wget-endraw-"></a>[](#-raw-aria2-endraw-download-utility-better-raw-wget-endraw-)[`aria2`](https://github.com/aria2/aria2) \- Download Utility *(better `wget`)*
 
@@ -244,7 +246,7 @@ sudo pacman -S aria2
 sudo apt install aria2 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-bat-endraw-reading-files-better-raw-cat-endraw-"></a>[](#-raw-bat-endraw-reading-files-better-raw-cat-endraw-)[`bat`](https://github.com/sharkdp/bat) \- Reading Files *(better `cat`)*
 
@@ -267,7 +269,7 @@ sudo pacman -S bat
 sudo apt install bat 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-diffsofancy-endraw-file-comparisons-better-raw-diff-endraw-"></a>[](#-raw-diffsofancy-endraw-file-comparisons-better-raw-diff-endraw-)[`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) \- File Comparisons *(better `diff`)*
 
@@ -290,7 +292,7 @@ sudo pacman -S diff-so-fancy
 sudo apt install diff-so-fancy 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-entr-endraw-watch-for-changes"></a>[](#-raw-entr-endraw-watch-for-changes)[`entr`](https://github.com/eradman/entr) \- Watch for changes
 
@@ -313,7 +315,7 @@ sudo pacman -S entr
 sudo apt install entr 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-exiftool-endraw-reading-writing-metadata"></a>[](#-raw-exiftool-endraw-reading-writing-metadata)[`exiftool`](https://github.com/exiftool/exiftool) \- Reading + writing metadata
 
@@ -323,7 +325,7 @@ sudo apt install entr
 
 [![View exiftool on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--nSGITJDc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/exiftool/exiftool%3Fcolor%3D232323%26label%3Dexiftool%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/exiftool/exiftool) [![Author exiftool](https://res.cloudinary.com/practicaldev/image/fetch/s--O9Az2q4U--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/exiftool-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/exiftool)[![Written in Perl](https://res.cloudinary.com/practicaldev/image/fetch/s--4p7NP6eo--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPerl%26color%3D39457E%26logo%3Dperl%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--4p7NP6eo--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPerl%26color%3D39457E%26logo%3Dperl%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-fdupes-endraw-duplicate-file-finder"></a>[](#-raw-fdupes-endraw-duplicate-file-finder)[`fdupes`](https://github.com/jbruchon/jdupes) \- Duplicate file finder
 
@@ -333,7 +335,7 @@ sudo apt install entr
 
 [![View jdupes on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--99_CghNS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/jbruchon/jdupes%3Fcolor%3D232323%26label%3Djdupes%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/jbruchon/jdupes) [![Author jbruchon](https://res.cloudinary.com/practicaldev/image/fetch/s--vgIP6u8c--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/jbruchon-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/jbruchon)[![Written in C](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-fzf-endraw-fuzzy-file-finder-better-raw-find-endraw-"></a>[](#-raw-fzf-endraw-fuzzy-file-finder-better-raw-find-endraw-)[`fzf`](https://github.com/junegunn/fzf) \- Fuzzy file finder *(better `find`)*
 
@@ -356,7 +358,7 @@ sudo pacman -S fzf
 sudo apt install fzf 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-hyperfine-endraw-command-benchmarking"></a>[](#-raw-hyperfine-endraw-command-benchmarking)[`hyperfine`](https://github.com/sharkdp/hyperfine) \- Command benchmarking
 
@@ -379,7 +381,7 @@ sudo pacman -S hyperfine
 sudo apt install hyperfine 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-just-endraw-modern-command-runner-better-raw-make-endraw-"></a>[](#-raw-just-endraw-modern-command-runner-better-raw-make-endraw-)[`just`](https://github.com/casey/just) \- Modern command runner *(better `make`)*
 
@@ -400,7 +402,7 @@ sudo pacman -S just
 sudo apt install just 
 ``` 
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-jq-endraw-json-processor"></a>[](#-raw-jq-endraw-json-processor)[`jq`](https://github.com/stedolan/jq) \- JSON processor
 
@@ -408,7 +410,7 @@ sudo apt install just
 
 [![View jq on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--lBG91BRc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/stedolan/jq%3Fcolor%3D232323%26label%3Djq%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/stedolan/jq) [![Author stedolan](https://res.cloudinary.com/practicaldev/image/fetch/s--2MCWjr-u--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/stedolan-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/stedolan)[![Written in C](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-most-endraw-multiwindow-scroll-pager-better-less"></a>[](#-raw-most-endraw-multiwindow-scroll-pager-better-less)[`most`](https://www.jedsoft.org/most/) \- Multi-window scroll pager *(better less)*
 
@@ -416,7 +418,7 @@ sudo apt install just
 
 [![Author Jed](https://res.cloudinary.com/practicaldev/image/fetch/s--X-YeqwJj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/jed-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://www.jedsoft.org/aboutme.html) [![Written in S-Lang](https://res.cloudinary.com/practicaldev/image/fetch/s--_iwHMPfg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DS_Lang%26color%3D000000%26logo%3Dsimkl%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--_iwHMPfg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DS_Lang%26color%3D000000%26logo%3Dsimkl%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-procs-endraw-process-viewer-better-ps"></a>[](#-raw-procs-endraw-process-viewer-better-ps)[`procs`](https://github.com/dalance/procs) \- Process viewer *(better ps)*
 
@@ -426,7 +428,7 @@ sudo apt install just
 
 [![View procs on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--j-vghycc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/dalance/procs%3Fcolor%3D232323%26label%3Dprocs%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/dalance/procs) [![Author dalance](https://res.cloudinary.com/practicaldev/image/fetch/s--Q8a5m3Y0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/dalance-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/dalance)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-rip-endraw-deletion-tool-better-rm"></a>[](#-raw-rip-endraw-deletion-tool-better-rm)[`rip`](https://github.com/nivekuil/rip) \- Deletion tool *(better rm)*
 
@@ -436,7 +438,7 @@ sudo apt install just
 
 [![View rip on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--BGH30FEd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/nivekuil/rip%3Fcolor%3D232323%26label%3Drip%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/nivekuil/rip) [![Author nivekuil](https://res.cloudinary.com/practicaldev/image/fetch/s--FxIi2281--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/nivekuil-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/nivekuil)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-ripgrep-endraw-search-within-files-better-raw-grep-endraw-"></a>[](#-raw-ripgrep-endraw-search-within-files-better-raw-grep-endraw-)[`ripgrep`](https://github.com/BurntSushi/ripgrep) \- Search within files *(better `grep`)*
 
@@ -446,7 +448,7 @@ sudo apt install just
 
 [![View ripgrep on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--HlBm8eGc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/BurntSushi/ripgrep%3Fcolor%3D232323%26label%3Dripgrep%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/BurntSushi/ripgrep) [![Author BurntSushi](https://res.cloudinary.com/practicaldev/image/fetch/s--7JP-Jeyh--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/BurntSushi-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/BurntSushi)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-rsync-endraw-fast-incremental-file-transfer"></a>[](#-raw-rsync-endraw-fast-incremental-file-transfer)[`rsync`](https://rsync.samba.org/) \- Fast, incremental file transfer
 
@@ -454,7 +456,7 @@ sudo apt install just
 
 [![View rsync on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--TE03uonE--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/WayneD/rsync%3Fcolor%3D232323%26label%3Drsync%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/WayneD/rsync) [![Author WayneD](https://res.cloudinary.com/practicaldev/image/fetch/s--ZHFZ704t--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/WayneD-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/WayneD)[![Written in C](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-sd-endraw-find-and-replace-better-raw-sed-endraw-"></a>[](#-raw-sd-endraw-find-and-replace-better-raw-sed-endraw-)[`sd`](https://github.com/chmln/sd) \- Find and replace *(better `sed`)*
 
@@ -464,7 +466,7 @@ sudo apt install just
 
 [![View sd on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--g4plX8A5--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/chmln/sd%3Fcolor%3D232323%26label%3Dsd%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/chmln/sd) [![Author chmln](https://res.cloudinary.com/practicaldev/image/fetch/s--3SZhtztB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/chmln-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/chmln)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-tre-endraw-directory-hierarchy-better-raw-tree-endraw-"></a>[](#-raw-tre-endraw-directory-hierarchy-better-raw-tree-endraw-)[`tre`](https://github.com/dduan/tre) \- Directory hierarchy *(better `tree`)*
 
@@ -474,7 +476,7 @@ sudo apt install just
 
 [![View tre on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--HSyAtyGc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/dduan/tre%3Fcolor%3D232323%26label%3Dtre%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/dduan/tre) [![Author dduan](https://res.cloudinary.com/practicaldev/image/fetch/s--7I0zM0fX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/dduan-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/dduan)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-xsel-endraw-access-the-clipboard"></a>[](#-raw-xsel-endraw-access-the-clipboard)[`xsel`](https://github.com/kfish/xsel) \- Access the clipboard
 
@@ -482,7 +484,7 @@ sudo apt install just
 
 [![View xsel on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--uz8hh1N---/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/kfish/xsel%3Fcolor%3D232323%26label%3Dxsel%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/kfish/xsel) [![Author kfish](https://res.cloudinary.com/practicaldev/image/fetch/s--It91r1bB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/kfish-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/kfish)[![Written in C](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 
 ## <a id="cli-monitoring-and-performance-apps"></a>[](#cli-monitoring-and-performance-apps)CLI Monitoring and Performance Apps
@@ -495,7 +497,7 @@ sudo apt install just
 
 [![View bandwhich on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--YaBK0m0Q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/imsnif/bandwhich%3Fcolor%3D232323%26label%3Dbandwhich%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/imsnif/bandwhich) [![Author imsnif](https://res.cloudinary.com/practicaldev/image/fetch/s--1jwkugBA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/imsnif-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/imsnif)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-ctop-endraw-container-metrics-and-monitoring"></a>[](#-raw-ctop-endraw-container-metrics-and-monitoring)[`ctop`](https://github.com/bcicen/ctop) \- Container metrics and monitoring
 
@@ -505,7 +507,7 @@ sudo apt install just
 
 [![View ctop on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--_c0PKhrS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/bcicen/ctop%3Fcolor%3D232323%26label%3Dctop%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/bcicen/ctop) [![Author bcicen](https://res.cloudinary.com/practicaldev/image/fetch/s--D5Zufd7K--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/bcicen-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/bcicen)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-bpytop-endraw-resource-monitoring-better-raw-htop-endraw-"></a>[](#-raw-bpytop-endraw-resource-monitoring-better-raw-htop-endraw-)[`bpytop`](https://github.com/aristocratos/bpytop) \- Resource monitoring *(better `htop`)*
 
@@ -515,7 +517,7 @@ sudo apt install just
 
 [![View bpytop on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--La1slgzg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/aristocratos/bpytop%3Fcolor%3D232323%26label%3Dbpytop%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/aristocratos/bpytop) [![Author aristocratos](https://res.cloudinary.com/practicaldev/image/fetch/s--OWZPdkTK--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/aristocratos-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/aristocratos)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-glances-endraw-resource-monitor-web-and-api"></a>[](#-raw-glances-endraw-resource-monitor-web-and-api)[`glances`](https://github.com/nicolargo/glances) \- Resource monitor + web and API
 
@@ -525,7 +527,7 @@ sudo apt install just
 
 [![View glances on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--BiqyIr4q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/nicolargo/glances%3Fcolor%3D232323%26label%3Dglances%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/nicolargo/glances) [![Author nicolargo](https://res.cloudinary.com/practicaldev/image/fetch/s--ngsgYxo---/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/nicolargo-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/nicolargo)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-gping-endraw-interactive-ping-tool-better-raw-ping-endraw-"></a>[](#-raw-gping-endraw-interactive-ping-tool-better-raw-ping-endraw-)[`gping`](https://github.com/orf/gping) \- Interactive ping tool *(better `ping`)*
 
@@ -535,7 +537,7 @@ sudo apt install just
 
 [![View gping on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--VRt0ZkHq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/orf/gping%3Fcolor%3D232323%26label%3Dgping%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/orf/gping) [![Author orf](https://res.cloudinary.com/practicaldev/image/fetch/s--BjIBTvQQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/orf-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/orf)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-duacli-endraw-disk-usage-analyzer-and-monitor-better-raw-du-endraw-"></a>[](#-raw-duacli-endraw-disk-usage-analyzer-and-monitor-better-raw-du-endraw-)[`dua-cli`](https://github.com/Byron/dua-cli) \- Disk usage analyzer and monitor *(better `du`)*
 
@@ -545,7 +547,7 @@ sudo apt install just
 
 [![View dua-cli on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--uSqjiQ8o--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/Byron/dua-cli%3Fcolor%3D232323%26label%3Ddua-cli%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/Byron/dua-cli) [![Author Byron](https://res.cloudinary.com/practicaldev/image/fetch/s--lnGYFEPy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/Byron-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/Byron)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-speedtestcli-endraw-command-line-speed-test-utility"></a>[](#-raw-speedtestcli-endraw-command-line-speed-test-utility)[`speedtest-cli`](https://github.com/sivel/speedtest-cli) \- Command line speed test utility
 
@@ -555,7 +557,7 @@ sudo apt install just
 
 [![View speedtest-cli on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--iSo8TCej--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/sivel/speedtest-cli%3Fcolor%3D232323%26label%3Dspeedtest-cli%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/sivel/speedtest-cli) [![Author sivel](https://res.cloudinary.com/practicaldev/image/fetch/s--ko5jqrC6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/sivel-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/sivel)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-dog-endraw-dns-lookup-client-better-raw-dig-endraw-"></a>[](#-raw-dog-endraw-dns-lookup-client-better-raw-dig-endraw-)[`dog`](https://github.com/ogham/dog) \- DNS lookup client *(better `dig`)*
 
@@ -565,7 +567,7 @@ sudo apt install just
 
 [![View dog on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--0wchjDFj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/ogham/dog%3Fcolor%3D232323%26label%3Ddog%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/ogham/dog) [![Author ogham](https://res.cloudinary.com/practicaldev/image/fetch/s--QC1gNgew--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/ogham-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/ogham)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 
 
@@ -581,7 +583,7 @@ sudo apt install just
 
 [![View browsh on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--B0DoDYCJ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/browsh-org/browsh%3Fcolor%3D232323%26label%3Dbrowsh%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/browsh-org/browsh) [![Author browsh-org](https://res.cloudinary.com/practicaldev/image/fetch/s--T9t-an-Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/browsh-org-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/browsh-org)[![Written in JavaScript](https://res.cloudinary.com/practicaldev/image/fetch/s--cgqT0lN_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DJavaScript%26color%3DF7DF1E%26logo%3Djavascript%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--cgqT0lN_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DJavaScript%26color%3DF7DF1E%26logo%3Djavascript%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-buku-endraw-bookmark-manager"></a>[](#-raw-buku-endraw-bookmark-manager)[`buku`](https://github.com/jarun/buku) \- Bookmark manager
 
@@ -591,7 +593,7 @@ sudo apt install just
 
 [![View buku on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--GfhqzUB1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/jarun/buku%3Fcolor%3D232323%26label%3Dbuku%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/jarun/buku) [![Author jarun](https://res.cloudinary.com/practicaldev/image/fetch/s--WtZ39WFW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/jarun-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/jarun)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-cmus-endraw-music-browser-player"></a>[](#-raw-cmus-endraw-music-browser-player)[`cmus`](https://github.com/cmus/cmus) \- Music browser / player
 
@@ -601,7 +603,7 @@ sudo apt install just
 
 [![View cmus on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--SrUzdOws--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/cmus/cmus%3Fcolor%3D232323%26label%3Dcmus%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/cmus/cmus) [![Author cmus](https://res.cloudinary.com/practicaldev/image/fetch/s--XhG1tvtx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/cmus-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/cmus)[![Written in C](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-cointop-endraw-track-crypto-prices"></a>[](#-raw-cointop-endraw-track-crypto-prices)[`cointop`](https://github.com/cointop-sh/cointop) \- Track crypto prices
 
@@ -611,7 +613,7 @@ sudo apt install just
 
 [![View cointop on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--FRegAPoj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/cointop-sh/cointop%3Fcolor%3D232323%26label%3Dcointop%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/cointop-sh/cointop) [![Author cointop-sh](https://res.cloudinary.com/practicaldev/image/fetch/s--HtEsM_Y1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/cointop-sh-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/cointop-sh)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-ddgr-endraw-search-the-web-from-the-terminal"></a>[](#-raw-ddgr-endraw-search-the-web-from-the-terminal)[`ddgr`](https://github.com/jarun/ddgr) \- Search the web from the terminal
 
@@ -621,7 +623,7 @@ sudo apt install just
 
 [![View ddgr on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--H8HIfCdf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/jarun/ddgr%3Fcolor%3D232323%26label%3Dddgr%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/jarun/ddgr) [![Author jarun](https://res.cloudinary.com/practicaldev/image/fetch/s--WtZ39WFW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/jarun-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/jarun)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-micro-endraw-code-editor-better-raw-nano-endraw-"></a>[](#-raw-micro-endraw-code-editor-better-raw-nano-endraw-)[`micro`](https://github.com/zyedidia/micro) \- Code editor *(better `nano`)*
 
@@ -631,7 +633,7 @@ sudo apt install just
 
 [![View micro on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--KRGBV_BC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/zyedidia/micro%3Fcolor%3D232323%26label%3Dmicro%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/zyedidia/micro) [![Author zyedidia](https://res.cloudinary.com/practicaldev/image/fetch/s--6uyJKAc1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/zyedidia-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/zyedidia)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-khal-endraw-calendar-client"></a>[](#-raw-khal-endraw-calendar-client)[`khal`](https://github.com/pimutils/khal) \- Calendar client
 
@@ -641,7 +643,7 @@ sudo apt install just
 
 [![View khal on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--hfkwGpeh--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/pimutils/khal%3Fcolor%3D232323%26label%3Dkhal%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/pimutils/khal) [![Author pimutils](https://res.cloudinary.com/practicaldev/image/fetch/s--36DhLHOm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/pimutils-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/pimutils)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-mutt-endraw-email-client"></a>[](#-raw-mutt-endraw-email-client)[`mutt`](https://gitlab.com/muttmua/mutt) \- Email client
 
@@ -651,7 +653,7 @@ sudo apt install just
 
 [![View mutt on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--bDGB9Uh1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/muttmua/mutt%3Fcolor%3D232323%26label%3Dmutt%26logo%3Dgithub%26labelColor%3D232323)](https://gitlab.com/muttmua/mutt) [![Author muttmua](https://res.cloudinary.com/practicaldev/image/fetch/s--WUXrosd1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/muttmua-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/muttmua)[![Written in C](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-newsboat-endraw-rss-atom-news-reader"></a>[](#-raw-newsboat-endraw-rss-atom-news-reader)[`newsboat`](https://github.com/newsboat/newsboat) \- RSS / ATOM news reader
 
@@ -661,7 +663,7 @@ sudo apt install just
 
 [![View newsboat on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--Tou5KnGz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/newsboat/newsboat%3Fcolor%3D232323%26label%3Dnewsboat%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/newsboat/newsboat) [![Author newsboat](https://res.cloudinary.com/practicaldev/image/fetch/s--2eLnD5li--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/newsboat-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/newsboat)[![Written in C++](https://res.cloudinary.com/practicaldev/image/fetch/s--tO0jFOIW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%2B%2B%26color%3D00599C%26logo%3Dcplusplus%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--tO0jFOIW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%2B%2B%26color%3D00599C%26logo%3Dcplusplus%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-rclone-endraw-manage-cloud-storage"></a>[](#-raw-rclone-endraw-manage-cloud-storage)[`rclone`](https://github.com/rclone/rclone) \- Manage cloud storage
 
@@ -669,7 +671,7 @@ sudo apt install just
 
 [![View rclone on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--Ql0VUkv2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/rclone/rclone%3Fcolor%3D232323%26label%3Drclone%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/rclone/rclone) [![Author rclone](https://res.cloudinary.com/practicaldev/image/fetch/s--9kE435sB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/rclone-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/rclone)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-taskwarrior-endraw-todo-task-management"></a>[](#-raw-taskwarrior-endraw-todo-task-management)[`taskwarrior`](https://github.com/GothenburgBitFactory/taskwarrior) \- Todo + task management
 
@@ -679,7 +681,7 @@ sudo apt install just
 
 [![View taskwarrior on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--DZ1p5A9N--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/GothenburgBitFactory/taskwarrior%3Fcolor%3D232323%26label%3Dtaskwarrior%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/GothenburgBitFactory/taskwarrior) [![Author GothenburgBitFactory](https://res.cloudinary.com/practicaldev/image/fetch/s--qZ_quxiy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/GothenburgBitFactory-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/GothenburgBitFactory)[![Written in C++](https://res.cloudinary.com/practicaldev/image/fetch/s--tO0jFOIW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%2B%2B%26color%3D00599C%26logo%3Dcplusplus%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--tO0jFOIW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%2B%2B%26color%3D00599C%26logo%3Dcplusplus%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-tuir-endraw-terminal-ui-for-reddit"></a>[](#-raw-tuir-endraw-terminal-ui-for-reddit)[`tuir`](https://gitlab.com/ajak/tuir) \- Terminal UI for Reddit
 
@@ -689,7 +691,7 @@ sudo apt install just
 
 [![View tuir on GitLab](https://res.cloudinary.com/practicaldev/image/fetch/s--E80F2_ic--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/gitlab/stars/ajak/tuir%3Fcolor%3Dfc6d26%26label%3Dtuir%26logo%3Dgitlab%26labelColor%3D232323)](https://gitlab.com/ajak/tuir) [![Author ajak](https://res.cloudinary.com/practicaldev/image/fetch/s--oqGk8Nye--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/ajak-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/ajak)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 
 
@@ -703,7 +705,7 @@ sudo apt install just
 
 [![View httpie on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--Dnl_-FV6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/httpie/httpie%3Fcolor%3D232323%26label%3Dhttpie%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/httpie/httpie) [![Author httpie](https://res.cloudinary.com/practicaldev/image/fetch/s--i8Sspvsd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/httpie-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/httpie)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-lazydocker-endraw-full-docker-management-app"></a>[](#-raw-lazydocker-endraw-full-docker-management-app)[`lazydocker`](https://github.com/jesseduffield/lazydocker) \- Full Docker management app
 
@@ -713,7 +715,7 @@ sudo apt install just
 
 [![View lazydocker on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--SXsHiDMk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/jesseduffield/lazydocker%3Fcolor%3D232323%26label%3Dlazydocker%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/jesseduffield/lazydocker) [![Author jesseduffield](https://res.cloudinary.com/practicaldev/image/fetch/s--k-sMPQEG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/jesseduffield-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/jesseduffield)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-lazygit-endraw-full-git-management-app"></a>[](#-raw-lazygit-endraw-full-git-management-app)[`lazygit`](https://github.com/jesseduffield/lazygit) \- Full Git management app
 
@@ -723,7 +725,7 @@ sudo apt install just
 
 [![View lazygit on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--MPsuMx8k--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/jesseduffield/lazygit%3Fcolor%3D232323%26label%3Dlazygit%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/jesseduffield/lazygit) [![Author jesseduffield](https://res.cloudinary.com/practicaldev/image/fetch/s--k-sMPQEG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/jesseduffield-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/jesseduffield)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-kdash-endraw-kubernetes-dashboard-app"></a>[](#-raw-kdash-endraw-kubernetes-dashboard-app)[`kdash`](https://github.com/kdash-rs/kdash/) \- Kubernetes dashboard app
 
@@ -731,7 +733,7 @@ sudo apt install just
 
 [![View kdash on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--Vzqnocxw--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/kdash-rs/kdash%3Fcolor%3D232323%26label%3Dkdash%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/kdash-rs/kdash/) [![Author kdash-rs](https://res.cloudinary.com/practicaldev/image/fetch/s--7GpSXjoX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/kdash-rs-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/kdash-rs)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-gdpdashboard-endraw-visual-gdp-debugger"></a>[](#-raw-gdpdashboard-endraw-visual-gdp-debugger)[`gdp-dashboard`](https://github.com/cyrus-and/gdb-dashboard) \- Visual GDP debugger
 
@@ -741,7 +743,7 @@ sudo apt install just
 
 [![View gdb-dashboard on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--t2fhQI36--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/cyrus-and/gdb-dashboard%3Fcolor%3D232323%26label%3Dgdb-dashboard%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/cyrus-and/gdb-dashboard) [![Author cyrus-and](https://res.cloudinary.com/practicaldev/image/fetch/s--0wBnPb3Q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/cyrus-and-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/cyrus-and)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ## <a id="cli-external-sercvices"></a>[](#cli-external-sercvices)CLI External Sercvices
 
@@ -753,7 +755,7 @@ sudo apt install just
 
 [![View ngrok on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--EkQ3uF4g--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/inconshreveable/ngrok%3Fcolor%3D232323%26label%3Dngrok%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/inconshreveable/ngrok) [![Author inconshreveable](https://res.cloudinary.com/practicaldev/image/fetch/s--XAQdMrb6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/inconshreveable-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/inconshreveable)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-tmate-endraw-share-a-terminal-session-via-internet"></a>[](#-raw-tmate-endraw-share-a-terminal-session-via-internet)[`tmate`](https://tmate.io/) \- Share a terminal session via internet
 
@@ -761,7 +763,7 @@ sudo apt install just
 
 [![View tmate on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--HsJ28khW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/tmate-io/tmate%3Fcolor%3D232323%26label%3Dtmate%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/tmate-io/tmate) [![Author tmate-io](https://res.cloudinary.com/practicaldev/image/fetch/s--gzhBPUaT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/tmate-io-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/tmate-io)[![Written in C](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-asciinema-endraw-recording-sharing-terminal-sessions"></a>[](#-raw-asciinema-endraw-recording-sharing-terminal-sessions)[`asciinema`](https://asciinema.org/) \- Recording + sharing terminal sessions
 
@@ -769,7 +771,7 @@ sudo apt install just
 
 [![View asciinema on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--VrN2hZMU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/asciinema/asciinema%3Fcolor%3D232323%26label%3Dasciinema%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/asciinema/asciinema) [![Author asciinema](https://res.cloudinary.com/practicaldev/image/fetch/s--VpxT2-Ie--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/asciinema-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/asciinema)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-navi-endraw-interactive-cheat-sheet"></a>[](#-raw-navi-endraw-interactive-cheat-sheet)[`navi`](https://github.com/denisidoro/navi) \- Interactive cheat sheet
 
@@ -777,7 +779,7 @@ sudo apt install just
 
 [![View navi on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--deBs-uAe--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/denisidoro/navi%3Fcolor%3D232323%26label%3Dnavi%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/denisidoro/navi) [![Author denisidoro](https://res.cloudinary.com/practicaldev/image/fetch/s--wZCh1Ptl--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/denisidoro-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/denisidoro)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-transfersh-endraw-fast-file-sharing"></a>[](#-raw-transfersh-endraw-fast-file-sharing)[`transfer.sh`](https://github.com/dutchcoders/transfer.sh/) \- Fast file sharing
 
@@ -788,7 +790,7 @@ sudo apt install just
 
 [![View transfer.sh on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--oQoapBbc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/dutchcoders/transfer.sh%3Fcolor%3D232323%26label%3Dtransfer.sh%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/dutchcoders/transfer.sh) [![Author dutchcoders](https://res.cloudinary.com/practicaldev/image/fetch/s--04qamyZq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/dutchcoders-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/dutchcoders)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-surge-endraw-deploy-a-site-in-seconds"></a>[](#-raw-surge-endraw-deploy-a-site-in-seconds)[`surge`](https://surge.sh/) \- Deploy a site in seconds
 
@@ -796,7 +798,7 @@ sudo apt install just
 
 [![surge-sh-example-usage](https://res.cloudinary.com/practicaldev/image/fetch/s--iKFo9ur---/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.ibb.co/NynprxZ/surge-sh.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--iKFo9ur---/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.ibb.co/NynprxZ/surge-sh.png)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-wttrin-endraw-check-the-weather"></a>[](#-raw-wttrin-endraw-check-the-weather)[`wttr.in`](https://github.com/chubin/wttr.in) \- Check the weather
 
@@ -806,7 +808,7 @@ sudo apt install just
 
 [![View wttr.in on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--VQFj_GZA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/chubin/wttr.in%3Fcolor%3D232323%26label%3Dwttr.in%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/chubin/wttr.in) [![Author chubin](https://res.cloudinary.com/practicaldev/image/fetch/s--QLlgb-tx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/chubin-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/chubin)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 
 
@@ -820,7 +822,7 @@ sudo apt install just
 
 [![View cowsay on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--4xYaURYG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/piuccio/cowsay%3Fcolor%3D232323%26label%3Dcowsay%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/piuccio/cowsay) [![Author piuccio](https://res.cloudinary.com/practicaldev/image/fetch/s--UybCoy_u--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/piuccio-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/piuccio)[![Written in JavaScript](https://res.cloudinary.com/practicaldev/image/fetch/s--cgqT0lN_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DJavaScript%26color%3DF7DF1E%26logo%3Djavascript%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--cgqT0lN_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DJavaScript%26color%3DF7DF1E%26logo%3Djavascript%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-figlet-endraw-output-text-as-big-ascii-art-text"></a>[](#-raw-figlet-endraw-output-text-as-big-ascii-art-text)[`figlet`](http://www.figlet.org/) \- Output text as big ASCII art text
 
@@ -830,7 +832,7 @@ sudo apt install just
 
 [![View figlet on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--7zjEEvB8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/cmatsuoka/figlet%3Fcolor%3D232323%26label%3Dfiglet%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/cmatsuoka/figlet) [![Author cmatsuoka](https://res.cloudinary.com/practicaldev/image/fetch/s--MeViFs3A--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/cmatsuoka-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/cmatsuoka)[![Written in C](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--RIZ8ybsm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DC%26color%3DA8B9CC%26logo%3Dc%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-lolcat-endraw-make-console-output-raibow-colored"></a>[](#-raw-lolcat-endraw-make-console-output-raibow-colored)[`lolcat`](https://github.com/busyloop/lolcat) \- Make console output raibow colored
 
@@ -840,7 +842,7 @@ sudo apt install just
 
 [![View lolcat on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--XIldTiim--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/busyloop/lolcat%3Fcolor%3D232323%26label%3Dlolcat%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/busyloop/lolcat) [![Author busyloop](https://res.cloudinary.com/practicaldev/image/fetch/s--CRMo5JJ0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/busyloop-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/busyloop)[![Written in Ruby](https://res.cloudinary.com/practicaldev/image/fetch/s--DaahHts3--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRuby%26color%3DCC342D%26logo%3Druby%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--DaahHts3--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRuby%26color%3DCC342D%26logo%3Druby%26logoColor%3DFFFFFF)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ### <a id="-raw-neofetch-endraw-show-system-data-and-ditstro-info"></a>[](#-raw-neofetch-endraw-show-system-data-and-ditstro-info)[`neofetch`](https://github.com/dylanaraps/neofetch) \- Show system data and ditstro info
 
@@ -854,7 +856,7 @@ As an example, I'm using `cowsay`, `figlet`, `lolcat` and `neofetch` to create a
 
 [![welcome](https://res.cloudinary.com/practicaldev/image/fetch/s--2Zp8xWf0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.ibb.co/cTg0jyn/Screenshot-from-2023-01-18-22-59-28.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--2Zp8xWf0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.ibb.co/cTg0jyn/Screenshot-from-2023-01-18-22-59-28.png)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 
 
@@ -868,7 +870,7 @@ On Linux, you usually want to use the native package manager (e.g. `pacman`, `ap
 
 Desktop apps on Linux can be managed in a similar way, via Flatpak. Again, [here's an example script](https://github.com/Lissy93/dotfiles/blob/master/scripts/installs/flatpak.sh) :)
 
-* * *
+* * *[⬆ back to top](#table-of-contents)
 
 ## <a id="conclusion"></a>[](#conclusion)Conclusion
 
