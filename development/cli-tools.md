@@ -8,6 +8,7 @@ At the end of the article, I've included some scripts to help you automate the i
 
 <details>
 <summary><b>Sumary (click for expand)</b></summary>
+
 ## Table of Contents
 
 - [Utils](#utils)
