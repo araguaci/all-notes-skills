@@ -502,7 +502,7 @@ sudo apt install just
 
 > Like `top`, but for monitoring resource usage for running (Docker and runC) containers. It shows real-time CPU, memory and network bandwidth as well as the name, status and ID of each container. There's also a built-in log viewer, and options to manage (stop, start, exec, etc) containers
 
-<img width="678" height="352" src=":/ca6974200be44579a3426102d5154c72"/>
+<img width="678" height="352" src="https://res.cloudinary.com/practicaldev/image/fetch/s--vdKvkGu6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/xGjyzZ2/ctop.gif"/>
 
 [![View ctop on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--_c0PKhrS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/bcicen/ctop%3Fcolor%3D232323%26label%3Dctop%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/bcicen/ctop) [![Author bcicen](https://res.cloudinary.com/practicaldev/image/fetch/s--D5Zufd7K--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/bcicen-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/bcicen)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
@@ -512,7 +512,7 @@ sudo apt install just
 
 > `bpytop` is a fast, interactive, visual resource monitor. It shows top running processes, recent CPU, mem, disk and network history. From the interface you can navigate, sort and search - there's also support for custom color themes
 
-<img width="678" height="351" src=":/5cfa5112fd6e439e963b3154a1d4f7cb"/>
+<img width="678" height="351" src="https://res.cloudinary.com/practicaldev/image/fetch/s--xRcMVtCB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/nj9jrhr/bpytop.gif"/>
 
 [![View bpytop on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--La1slgzg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/aristocratos/bpytop%3Fcolor%3D232323%26label%3Dbpytop%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/aristocratos/bpytop) [![Author aristocratos](https://res.cloudinary.com/practicaldev/image/fetch/s--OWZPdkTK--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/aristocratos-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/aristocratos)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
@@ -522,7 +522,7 @@ sudo apt install just
 
 > `glances` is another resource monitor, but with a different feature set. It includes a fully responsive web view, a REST API and historical monitoring. It's easily extendable, and can be integrated with other services
 
-<img width="678" height="352" src=":/441efbed2dcf4f69ae75e6175e91c925"/>
+<img width="678" height="352" src="https://res.cloudinary.com/practicaldev/image/fetch/s--6Wp2nhqx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/6g65Qy4/glances.gif"/>
 
 [![View glances on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--BiqyIr4q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/nicolargo/glances%3Fcolor%3D232323%26label%3Dglances%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/nicolargo/glances) [![Author nicolargo](https://res.cloudinary.com/practicaldev/image/fetch/s--ngsgYxo---/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/nicolargo-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/nicolargo)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
@@ -532,7 +532,7 @@ sudo apt install just
 
 > `gping` can run ping tests on multiple hosts, while showing results in real-time graph. It can also be used to monitor execution time, when used with the `--cmd` flag
 
-<img width="678" height="360" src=":/782611742dbf4b1b839e81573880242f"/>
+<img width="678" height="360" src="https://res.cloudinary.com/practicaldev/image/fetch/s--YMe9lAFT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/CvG6xt0/gping.gif"/>
 
 [![View gping on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--VRt0ZkHq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/orf/gping%3Fcolor%3D232323%26label%3Dgping%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/orf/gping) [![Author orf](https://res.cloudinary.com/practicaldev/image/fetch/s--BjIBTvQQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/orf-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/orf)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
@@ -542,7 +542,7 @@ sudo apt install just
 
 > `dua-cli` let's you interactively view used and available disk space for each mounted drive, and makes freeing up storage easy
 
-<img width="678" height="365" src=":/c6667fbc8f844c6fbc3dad70cab4a434"/>
+<img width="678" height="365" src="https://res.cloudinary.com/practicaldev/image/fetch/s--nle07K3Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/x3NbDLR/dua.gif"/>
 
 [![View dua-cli on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--uSqjiQ8o--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/Byron/dua-cli%3Fcolor%3D232323%26label%3Ddua-cli%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/Byron/dua-cli) [![Author Byron](https://res.cloudinary.com/practicaldev/image/fetch/s--lnGYFEPy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/Byron-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/Byron)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
@@ -552,7 +552,7 @@ sudo apt install just
 
 > `speedtest-cli` just runs an internet speed test, via speedtest.net - but straight from the terminal :)
 
-<img width="678" height="360" src=":/119be15cbbd84ce7a90995d53b66d8de"/>
+<img width="678" height="360" src="https://res.cloudinary.com/practicaldev/image/fetch/s--qFJxYj0D--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/25QCbdF/speedtest-cli.gif"/>
 
 [![View speedtest-cli on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--iSo8TCej--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/sivel/speedtest-cli%3Fcolor%3D232323%26label%3Dspeedtest-cli%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/sivel/speedtest-cli) [![Author sivel](https://res.cloudinary.com/practicaldev/image/fetch/s--ko5jqrC6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/sivel-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/sivel)[![Written in Python](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--piMR3xQn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DPython%26color%3D3C78A9%26logo%3Dpython%26logoColor%3DFFFFFF)
 
@@ -578,7 +578,7 @@ sudo apt install just
 
 > `browsh` is a fully interactive, real-time, and modern text-based browser rendered to TTYs and browsers. It supports both mouse and keyboard navigation, and is surprisingly feature rich for a purely terminal based application. It also mitigates battery drain issues that plague modern browsers, and with support for MoSH, you can experience faster load times due to reduced bandwidth
 
-![browsh-example-usage](:/f63f000e411c4edb8072a34fcab6e3a2)
+![browsh-example-usage](https://res.cloudinary.com/practicaldev/image/fetch/s--sO3TkLzU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/S7nLFX5/browsh.gif)
 
 [![View browsh on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--B0DoDYCJ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/browsh-org/browsh%3Fcolor%3D232323%26label%3Dbrowsh%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/browsh-org/browsh) [![Author browsh-org](https://res.cloudinary.com/practicaldev/image/fetch/s--T9t-an-Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/browsh-org-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/browsh-org)[![Written in JavaScript](https://res.cloudinary.com/practicaldev/image/fetch/s--cgqT0lN_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DJavaScript%26color%3DF7DF1E%26logo%3Djavascript%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--cgqT0lN_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DJavaScript%26color%3DF7DF1E%26logo%3Djavascript%26logoColor%3DFFFFFF)
 
@@ -949,3 +949,6 @@ Permission is hereby granted, free of charge, to
 [View on GitHub](https://github.com/Lissy93/repo-badge-maker)
 
 [![View repo-badge-maker on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--VPee_IQV--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/Lissy93/repo-badge-maker%3Fcolor%3D232323%26label%3Drepo-badge-maker%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/Lissy93/repo-badge-maker) [![Author Lissy93](https://res.cloudinary.com/practicaldev/image/fetch/s--br1jY6vC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/Lissy93-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/Lissy93)
+
+
+[source from Alicia Sykes](https://dev.to/lissy93/cli-tools-you-cant-live-without-57f6#procshttpsgithubcomdalanceprocs-process-viewer-_better-ps_)
