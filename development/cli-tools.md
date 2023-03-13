@@ -339,7 +339,7 @@ sudo apt install entr
 
 > `fzf` is an extremely powerful, and easy to use fuzzy file finder and filtering tool. It lets you search for a string or pattern across files. fzf also has [plugins](https://github.com/junegunn/fzf/wiki/Related-projects) available for most shells and IDEs, for showing instant results while searching. This [post](https://www.freecodecamp.org/news/fzf-a-command-line-fuzzy-finder-missing-demo-a7de312403ff/) by Alexey Samoshkin highlights some of it's use cases.
 
-<img width="678" height="364" src=":/61661862490140e7be48143fb7e1bfc0"/>
+<img width="678" height="364" src="https://res.cloudinary.com/practicaldev/image/fetch/s---VBiXRJW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/LNcwjWm/fzf.gif"/>
 
 [![View fzf on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--X-I9wLp_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/junegunn/fzf%3Fcolor%3D232323%26label%3Dfzf%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/junegunn/fzf) [![Author junegunn](https://res.cloudinary.com/practicaldev/image/fetch/s--9-7AwB7k--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/junegunn-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/junegunn)[![Written in Go](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--6zXuw3Pb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DGo%2520Lang%26color%3D00ADD8%26logo%3Dgo%26logoColor%3DFFFFFF)
 
@@ -422,7 +422,7 @@ sudo apt install just
 
 > `procs` is an easy to navigate process viewer, it has colored highlighting, makes sorting and searching for processes easy, has tree view and updates in real-time
 
-<img width="678" height="414" src=":/ed934b75a112472c932a2c471413101b"/>
+<img width="678" height="414" src="https://res.cloudinary.com/practicaldev/image/fetch/s--WqRp_Xe5--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.ibb.co/y6qhgDX/procs-demo.gif"/>
 
 [![View procs on GitHub](https://res.cloudinary.com/practicaldev/image/fetch/s--j-vghycc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/github/stars/dalance/procs%3Fcolor%3D232323%26label%3Dprocs%26logo%3Dgithub%26labelColor%3D232323)](https://github.com/dalance/procs) [![Author dalance](https://res.cloudinary.com/practicaldev/image/fetch/s--Q8a5m3Y0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/badge/dalance-b820f9%3FlabelColor%3Db820f9%26logo%3Dgithubsponsors%26logoColor%3Dfff)](https://github.com/dalance)[![Written in Rust](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)](https://res.cloudinary.com/practicaldev/image/fetch/s--QnEL4tqy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://img.shields.io/static/v1%3Flabel%3D%26message%3DRust%26color%3De86243%26logo%3Drust%26logoColor%3DFFFFFF)
 
