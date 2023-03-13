@@ -9,3 +9,4 @@ In this repository I publish my work for further evaluation of my skills.
 * [Nopanel](/nopanel/README.md)
 * [Operations](/operations/README.md)
 * [Scripts](/scripts/)
+* [The Best cli Tools](/development/cli-tools.md)
