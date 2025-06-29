@@ -1,7 +1,5 @@
-.idea/
-__pycache__/
-*.py[cod]
-*$py.class
-*.lnk
-desktop.ini
-linux-issabel-asterisk
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

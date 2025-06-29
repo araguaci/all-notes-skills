@@ -10,3 +10,14 @@ In this repository I publish my work for further evaluation of my skills.
 * [Operations](/operations/README.md)
 * [Scripts](/scripts/)
 * [CLI tools you won't be able to live without 🔧](/development/cli-tools.md)
+
+## jekyll docs
+
+````
+cd my-jekyll-website
+bundle init
+gem install "jekyll-theme-primer"
+bundle install
+bundle add jekyll
+bundle exec jekyll serve
+````

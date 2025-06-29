@@ -1,0 +1,9 @@
+[submodule "lab-tools"]
+	path = lab-tools
+	url = https://github.com/araguaci/lab-tools
+[submodule "raspberrypi"]
+	path = raspberrypi
+	url = https://github.com/araguaci/raspberrypi
+[submodule "lab-linux"]
+	path = lab-linux
+	url = https://github.com/araguaci/lab-linux
